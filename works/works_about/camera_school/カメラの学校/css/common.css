@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+body{
+    font-size:12px;
+    line-height: 1.5;
+    color:#4d4d4d;
+    font-family:  "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic,'Meiryo UI',Meiryo,"ＭＳ ゴシック",Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+/*--------------------------------------
+base setting
+--------------------------------------*/
+a{
+	color: #4d4d4d;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+    color: #B2C769;
+}
+img{
+	max-width: 100%;
+	height:auto;
+}
+input{
+	-webkit-appearance:none;
+	appearance:none;
+	border-radius: 0;
+}
+/*--------------------------------------
+utility class
+--------------------------------------*/
+.text-center{
+	text-align: center;
+}
+
+.wrapper{
+	position: relative;
+	width: 920px;
+	margin:0 auto;
+}
+/*--------------------------------------
+btn
+--------------------------------------*/
+
+.btn-register__mail{
+	-webkit-appearance:none;
+	appearance:none;
+	width:297px;
+	height:48px;
+	border:none;
+	background: url(../images/home/btn_register_mail.gif) no-repeat;
+	background-size:contain;
+	text-indent: 120%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.btn-register__mail:hover{
+	cursor: pointer;
+}
+/*--------------------------------------
+header class
+--------------------------------------*/
+.header{
+	position: relative;
+	margin-bottom: 60px;
+	padding:30px 0 0;
+}
+
+.header-inner{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.site-logo{
+    width:390px;
+}
+
+.login-form{
+	width:505px;
+}
+
+.btn-contact{
+	position: absolute;
+	top:0;
+	right: 0;
+	display: inline-block;
+	margin-left: 1px;
+	background: #84BE8D;
+	color: #fff;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;	
+}
+
+.form-login,
+.login-list{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.login-item{
+	line-height: 32px;
+}
+
+.login-title{
+	margin-bottom: 11px;
+}
+.login-parts{
+	width:121px;
+	margin: 0 5px 0 4px;
+	padding:8px 3px;
+	border:solid 1px #d7d7d7;
+	line-height: 1.5;	
+}
+.btn-login{
+	-webkit-appearance:none;
+	appearance:none;
+	width:80px;
+	height:32px;
+	border:none;
+	background:url(../images/common/btn_login.gif) no-repeat;
+}
+.btn-login:hover{
+	cursor: pointer;
+}
+.msg-for-foggot{
+	margin-left: 70px;
+}
+.site-visual{
+	margin-bottom: 40px;
+}
+/*--------------------------------------
+nav class
+--------------------------------------*/
+.nav-local{
+	margin-bottom: 30px;
+	text-align: center;
+}
+.nav-local__item{
+	display: inline-block;
+	margin-right: 15px;
+	padding-right: 15px;
+	border-right: solid 1px #4d4d4d;
+	font-size: 13px;
+}
+/*--------------------------------------
+footer class
+--------------------------------------*/
+.footer{
+	padding:20px 0;
+	border-top: 1px solid #D8D8D8;
+	text-align: center;	
+}
+.author-outer{
+	margin-bottom: 30px;
+}
+.author-title{
+	margin-bottom: 20px;
+}
+.author-detail{
+	margin-bottom: 30px;
+}

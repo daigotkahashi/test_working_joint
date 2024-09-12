@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/*--------------------------------------
+box
+--------------------------------------*/
+.box{
+	margin-bottom: 30px;
+	padding:20px 40px 40px;
+	border: 1px solid #D8D8D8;
+	border-top: 2px solid #B2C769;
+}
+.box-case{
+	margin-bottom: 60px;
+}
+.box-voice{
+	margin-bottom: 72px;
+}
+.box-blog{
+	padding:40px;
+}
+
+.box-blog dl{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.box-faq{
+	padding:20px;
+	border: 5px solid #EBEBEB;
+}
+
+.box-outer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.box-register{
+	width:440px;
+	padding:20px;
+}
+.box-register__facebook{
+	padding-bottom: 95px;
+	border-top: 2px solid #3C5994;
+}
+.box-register__mail{
+	border-top:2px solid #F87568
+}
+.box-title{
+	margin-bottom: 10px;
+}
+.box-title__feature{
+	margin:0 0 50px;
+	padding-bottom: 30px;
+	background:url(../images/home/tit_border_1.gif) no-repeat center bottom;
+	font-size: 36px;
+	font-weight: bold;
+}
+.box-title__voice{
+	margin:0 0 50px;
+	padding-bottom: 30px;
+	background:url(../images/home/tit_border_1.gif) no-repeat center bottom;
+	font-size: 36px;
+	font-weight: bold;
+}
+.box-title__register{
+	margin-bottom: 30px;
+}
+.box-title__faq{
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	background: url(../images/home/border_2.gif) no-repeat left bottom;
+}
+.box-title__mail{
+	margin-bottom: 10px;
+}
+.box-content{
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.box-content i.icon-facebook{
+	margin:0 10px 0 0;
+}
+
+/*--------------------------------------
+case
+--------------------------------------*/
+.case-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.case-item{
+	width:306px;
+	text-align: center;
+}
+.case-thumb{
+	margin-bottom: 20px;
+}
+.case-text{
+	font-size:16px;
+}
+.case-answer__text{
+	font-size: 16px;	
+}
+.case-answer{
+	padding-top: 171px;
+	background:url(../images/home/arrow_bottom.png) center 60px no-repeat;
+}
+.case-logo{
+	display: block;
+	margin:0 auto 20px;
+}　
+.case-answer__text{
+	font-size:24px;
+	font-weight: bold;
+}
+.steps-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.steps-item{
+	width:268px;
+	font-size:16px;
+	text-align: center;
+}
+.steps-title{
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.steps-img{
+	margin-bottom: 14px;
+}
+.steps-detail{
+	font-size:13px;
+}
+/*--------------------------------------
+list
+--------------------------------------*/
+.list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.list-item{
+	width:185px;
+}
+.list-text{
+	font-size:14px;
+	line-height: 1.75;	
+}
+
+.profile{
+	margin-bottom: 16px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.info-item{
+	background: url("../images/home/disc_2.gif") no-repeat left 5px;
+	font-size: 13px;
+	line-height: 2;
+	padding: 0 20px 0 25px;
+}
+.info-caution{
+	color: #f87568;
+	text-decoration: underline;
+}
+.info-bnr dt,
+.info-bnr dd{
+	width:400px;
+}
+
+
+/*--------------------------------------
+feature
+--------------------------------------*/
+.feature-item{
+	margin-bottom: 60px;	
+}
+
+.video-outer{ 
+	margin:15px auto;
+	width:560px;
+}
+
+.feature-title{
+	margin-bottom: 24px;
+	font-size:24px;
+	font-weight: bold;
+}
+.feature-text{
+	margin-bottom: 45px;
+	font-size: 16px;
+	text-align: justify;
+}
+/*--------------------------------------
+icon
+--------------------------------------*/
+.icon{
+	display:block;
+	margin-right: 10px;
+}
+.icon-number{
+	margin: 0 0 10px;
+	text-align: center;
+}
+.icon-number1::before{
+	content:url(../images/home/num01.png);
+}
+.icon-number2::before{
+	content:url(../images/home/num02.png);
+}
+.icon-number3::before{
+	content:url(../images/home/num03.png);
+}
+
+.icon-facebook::before{
+	content: url(../images/home/icon_camera.gif);
+}
+
+.icon-user{
+	margin-bottom: 5px;
+}
+.icon-user::before{
+	content:url(../images/home/icon_man.png);
+}
+/*--------------------------------------
+form class
+--------------------------------------*/
+.required{
+	color: #d86a5f;
+	padding-left: 0.25em;
+}
+
+.register-item{
+	margin-bottom: 10px;
+}
+.register-parts{
+	-webkit-appearance:none;
+	appearance:none;
+	width:390px;
+	padding:9px;
+	border:none;
+	background:#E9E9E9 no-repeat left center;
+	font-size:14px;
+}
+
+.register-parts__checkbox{
+	width:12px;
+	height:12px;
+	border:solid 1px #aaa;
+	border-radius: 4px;
+	vertical-align: top;
+}
+.register-parts__checkbox::checked{
+	background:#3B99FC;
+}
+
+@media screen and (max-width:768px){
+/*--------------------------------------
+　メディアクエリ内に変化を記述しよう
+--------------------------------------*/
+.box-title__feature{
+	font-size:21px;
+}
+
+	
+}

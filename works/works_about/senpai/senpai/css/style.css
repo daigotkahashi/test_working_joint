@@ -1,0 +1,1201 @@
+@charset "UTF-8";
+/* CSS Document */
+/*---------------------
+		基本設定
+-----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Nunito:wght@200;300;400;600;700;800&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+/*font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+
+html{
+	font-size: 62.5%;
+	/*16px*62.5=10px*/
+	color: #393939;
+}
+body{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+h2{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+	color: #393939;
+}
+/*---------------------
+
+
+		SP
+
+
+-----------------------*/
+body{
+	font-size: 1.6rem;
+}
+h2{
+	font-size: 3.6rem;
+	text-align: center;
+	font-weight: 500;
+}
+.pc{
+	display: none;
+}
+
+.inner{
+	padding: 0 20px 0;
+}
+
+.slider img{
+	padding: 0;
+	display: block;
+    margin: 0 auto;
+}
+.en-accent{
+	font-family: 'Nunito', sans-serif;
+}
+.blue{
+	color: #3785c9;
+}
+.green{
+	color: #5dc9b6;
+}
+.orange{
+	color: #c9a137;
+}
+.red{
+	color: #ea2727;
+}
+.flex{
+	display: flex;
+}
+.block{
+	display: block;
+}
+.center{
+	text-align: center
+}
+
+.under-line {
+	text-decoration-line: underline;
+  background-image: -webkit-linear-gradient(left, #5dc9b6 50%, transparent 50%);
+  background-image: linear-gradient(to right, #5dc9b6 50%, transparent 50%);
+  background-position: 100% 0%;
+  background-size: 200% auto;
+  background-repeat: no-repeat;
+  -webkit-transition: background-position .3s ease-out;
+  transition: background-position .3s ease-out;
+}
+.under-line:hover{
+  background-position: 0% 0%;
+}
+.small{
+	font-size: 1.6rem;
+}
+.sp-heigt-1{
+	line-height: 28px;
+}
+.bold-2{
+	font-weight: 600;
+}
+.bold{
+	font-weight: 500;
+}
+/*---------------------
+		nav
+-----------------------*/
+.header{
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    background-color: #fff;
+}
+
+.btn-trigger{
+	width: 40px;
+	height: 40px;
+	background-color: #5dc9b6;
+	position: fixed;
+	top: 26px;
+	right: 20px;
+	z-index: 110;
+}
+.btn-trigger span{
+	background-color: #053056;
+	width: 28px;
+	height: 1px;
+	margin: 0 auto;
+	position: absolute;
+	display: block;
+	left: 6px;
+    top: 17px;
+	transition: all 0.5s;
+}
+.btn-trigger span:first-of-type{
+	top: 6px;
+}
+.btn-trigger span:nth-last-of-type(2){
+	top: 19px;
+}
+.btn-trigger span:last-of-type{
+	top: 33px;
+}
+.btn-trigger.active span:first-of-type{
+	transform: rotate(45deg);
+	transform: all 0.5s;
+	top: 20px;
+}
+.btn-trigger.active span:nth-of-type(2){
+	opacity: 0;
+	transform: all 0.5s;
+}
+.btn-trigger.active span:last-of-type{
+	transform: rotate(-45deg);	
+	transform: all 0.5s;
+	top: 20px;
+}
+.navigation{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 30;
+	width: 100%;
+	height: 120%;
+	padding: 120px 0 150px;
+	background-color: rgba(255,255,255,0.97);
+}
+
+.nav-text {
+  background-image: -webkit-linear-gradient(left, #5dc9b6 50%, transparent 50%);
+  background-image: linear-gradient(to right, #5dc9b6 50%, transparent 50%);
+  background-position: 100% 0%;
+  background-size: 200% auto;
+  background-repeat: no-repeat;
+  -webkit-transition: background-position .3s ease-out;
+  transition: background-position .3s ease-out;
+}
+.nav-text:hover{
+  background-position: 0% 0%;
+}
+.sp-space{
+	padding: 10px;
+}
+.logo{
+	position: relative;
+    z-index: 100;
+	display: block;
+    margin: 0 auto;
+}
+.header>.block{
+	padding: 10px 0 10px;
+}
+.nav-list{
+	display: block;
+	text-align: center;
+	font-size: 30px;
+}
+.nav-item__link{
+	padding-bottom: 60px;
+	max-width: 200px;
+    margin: auto;
+}
+
+.current{	
+	background-position: 0% 0%;
+}
+
+/*---------------------
+      スライド
+-----------------------*/
+.main-visual{
+	padding-top: 90px;
+}
+
+/*---------------------
+		お勧め
+-----------------------*/
+.persona{
+	background: #f7f7f7;
+}
+.persona-title{
+	font-size: 3rem;
+	font-weight: 500;
+	padding: 60px 0 60px;
+}
+.persona-title>span{
+	font-weight: 700;
+}
+.persona>dt{
+	text-align: center;
+}
+
+.persona-name{
+	text-align: center;
+	font-size: 2.4rem;
+	font-weight: 400;
+	padding-bottom: 14px;
+}
+.persona-about{
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: 400;
+	padding-bottom: 18px;
+}
+.persona-item{
+	background: #fff;
+	min-height: 200px;
+	max-width: 400px;
+    margin: 0 auto;
+	box-shadow: -1px 1px 2px rgba(112, 112, 112, .2);
+}
+.persona-item dd{
+	padding-bottom: 20px;
+	display: flex;
+	display: flex;
+}
+.persona-item dd:first-of-type{
+	padding-top: 20px;
+}
+.persona-1{
+	padding-bottom: 40px;
+}
+.persona-2{
+	padding-bottom: 40px;
+}
+.persona-3{
+	padding-bottom: 80px;
+}
+/*---------------------
+		コース
+-----------------------*/
+.course{
+	background: #eeeeee;
+	padding-bottom: 80px;
+}
+.course-item .sp{
+	display: block;
+    margin: 0 auto 0;
+}
+.course-title img{
+	max-width: 70%;
+	padding: 80px 0 80px;
+}
+.course-container{
+	background: #fff;
+	height: 200px;
+	padding: 0 10px 0;
+	margin-bottom: 40px;
+	max-width: 670px;
+    margin: 0 auto 40px;
+}
+.course-container.last{
+	margin-bottom: 0;
+	height: 220px;
+}
+.course-container>dt{
+	font-size: 2.8rem;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	text-decoration-line: underline;
+	text-underline-position: under;
+	font-weight: 400;
+	text-align: center;
+}
+.course-container>dd{
+	line-height: 21px;
+}
+/*---------------------
+	生徒・先生の声
+-----------------------*/
+.voice{
+	padding-bottom: 80px;
+}
+.voice-title{
+	padding: 80px 0 80px;
+}
+.student-heading{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #5dc9b6;
+}
+.student-img{
+	max-width: 125px;
+	margin-left: 20px;
+}
+.student-about{
+	padding: 0 10px 0 20px;
+	font-weight: 300;
+}
+.student-about dt{
+	padding-bottom: 20px;
+	font-weight: 500;
+}
+.student-about dt:first-of-type{
+	font-size: 1.8rem;
+}
+.student-about dt:last-of-type{
+	padding-bottom: 0px;
+}
+.student-voice{
+	background: #bee8e1;
+	line-height: 24px;
+}
+.student-voice>dd{
+	padding: 10px;
+}
+.voice-item{
+	padding-bottom: 40px;
+}
+.voice-item.last{
+	padding-bottom: 0px;
+}
+/*---------------------
+	よくある質問
+-----------------------*/
+.question{
+	background: #5dc9b6;
+	padding-bottom: 80px;
+}
+.question-title{
+	padding: 80px 0 40px;
+}
+.question-a{
+	max-width: 25px;
+	margin-left: 6px;
+	margin-right: 10px;
+}
+.question-q{
+	max-width: 25px;
+	margin-left: 6px;
+	margin-right: 10px;
+}
+.question-container{
+	background-image: url("../image/pattern/linedpaper_@2x.png");
+	margin-bottom: 40px;
+	border-radius: 5px;
+}
+.question-container dd{
+	padding-bottom: 20px;
+	padding-right: 10px;
+}
+.question-container.last{
+	padding-bottom: 0;
+}
+.question-about{
+	padding-top: 20px;
+}
+/*---------------------
+	生徒先生募集
+-----------------------*/
+.recruit{
+	background: #eeeeee;
+	padding-bottom: 80px;
+}
+.recruit-title{
+	padding: 80px 0 60px;
+}
+.recruit-title img{
+	max-width: 80%;
+}
+.recruit-item{
+	padding-bottom: 40px;
+}
+.recruit .sp{
+	display: block;
+	margin: 0 auto 0;
+}
+.recruit-container{
+	background: #fff;
+	min-height: 130px;
+	max-width: 670px;
+    margin: 0 auto 40px;
+}
+.recruit-heading{
+	font-size: 1.8rem;
+	color: #3785c9;
+	line-height: 24px;
+	padding: 10px;
+}
+.recruit-text{
+	padding-bottom: 10px;
+	padding: 0 10px 10px 10px;
+}
+.admition{
+	font-size: 2.8rem;
+	padding: 40px 0 40px;
+	text-align: center;
+}
+.admition-container{
+	background: #fff;
+}
+.admition-text dt{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.admition-text dd{
+	text-align: center;
+	font-size: 1.4rem;
+	padding-bottom: 20px;
+}
+.admition-text dd.last{
+	padding-bottom: 10px;
+}
+.trial-btn{
+	display: block;
+    padding: 40px 0 40px;
+    margin: auto;
+}
+.trial-btn>p{
+	text-align: center;
+	font-size: 20px;
+	padding: 16px 30px;
+	background-color: #3e95e1;
+	color: #fff;
+	border-radius: 5px;
+	max-width: 300px;
+    margin: auto;
+}
+.trial-btn>p:hover{
+	background-color: #3785c9;	
+}
+.trial-btn>p:active {
+  background: #04213b;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+  color: #1679a1;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+}
+
+/*---------------------
+	本サービスの特徴
+-----------------------*/
+.about{
+	padding-top: 90px;
+}
+.about-title{
+	padding: 80px 0 80px;
+	color: #5dc9b6;
+	font-weight: 600;
+}
+.about-container{
+	background: #5dc9b6;
+}
+.about-text{
+	font-size:1.8rem;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	line-height: 36px;
+	color: #fff;
+	padding: 20px;
+}
+/*---------------------
+	高校生の先生だから出来る事
+-----------------------*/
+.advantage{
+	background-image: url("../image/SP-img/img-sp-senpaiとは/sp-school-bg.png");
+	background-size: cover;
+	padding-bottom: 80px;
+}
+.advantage-container{
+	background-image: url("../image/pattern/linedpaper_@2x.png");
+	background-size: cover;
+	border-radius: 5px;
+	margin-bottom: 40px;
+}
+.advantage-container h4{
+	font-size: 2rem;
+	padding: 40px 0 40px;
+	font-weight: 500;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.advantage-container:last-of-type{
+	margin-bottom: 0;
+}
+.advantage-container>p{
+	font-size: 1.8rem;
+	line-height: 32px;
+	padding: 5px 10px 40px;
+}
+.advantage-container li{
+	padding-bottom: 20px;
+}
+.advantage-container li.advantage-list{
+	padding-bottom: 40px;
+}
+
+.advantage-container p{
+	padding-bottom: 20px;
+}
+.advantage-container p.first{
+	padding: 10px;
+	font-size: 1.4rem;
+}
+.advantage-container p.last{
+	line-height: 30px;
+	font-size: 1.4rem;
+}
+.advantage-title{
+	padding: 40px 0 40px;
+}
+.advantage-title img{
+	max-width: 80%;
+}
+.problem-about{
+	font-size: 1.2rem;
+}
+.problem-about p:last-of-type{
+	text-decoration-line: underline;
+	text-underline-position: under;
+}
+/*---------------------
+		校舎・連絡先
+-----------------------*/
+.access-title{
+	padding: 80px 0 40px;
+	font-weight: 500;
+}
+.access h3{
+	padding-bottom: 20px;
+	font-size: 2rem;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.school{
+	padding-bottom: 40px;
+}
+.school dl{
+	line-height: 24px;
+	padding-bottom: 24px;
+}
+.school dl:last-of-type{
+	padding-bottom: 0;
+}
+.office{
+	padding-bottom: 40px;
+}
+.office dl{
+	line-height: 24px;
+	padding-bottom: 24px;
+}
+.office dl:last-of-type{
+	padding-bottom: 0;
+}
+/*---------------------
+	お問い合わせ
+-----------------------*/
+.form{
+	padding-top: 90px;
+	background-color: #eeeeee;
+}
+.form>.inner{
+	display: block;
+}
+.lead-form{
+	padding: 80px 0 80px;
+}
+.label{
+	font-size: 2.4rem;
+}
+.btn-area{
+	margin: 0 auto 0;
+	padding: 80px 0 80px;
+}
+.inputs {
+	box-shadow: -1px 1px 2px rgba(112, 112, 112, .2);
+    border-radius: 3px;
+	display: block;
+	width: 100%;
+    height: 40px;
+	font-size: 2rem;
+	background-color: #fff;
+}
+.radio{
+	box-shadow: none;
+	border: none;
+	display: block;
+	height: auto;
+	background: #eeeeee;
+}
+.radio-btn{
+	display: block;
+	font-size: 1.6rem;
+	padding-bottom: 22px;
+}
+.radio-btn:last-of-type{
+	padding-bottom: 0;
+}
+.text-title{
+	padding-bottom: 12px;
+	display: block;
+}
+.brackets{
+	font-size: 1.6rem;
+	padding-left: 20px;
+}
+.necessary{
+	font-size: 1.6rem;
+    background: #ea2727;
+    color: #fff;
+    margin-left: 20px;
+    padding: 0px 5px 2px;
+    border-radius: 2px;
+    position: absolute;
+    top: 5px;
+}
+.relative{
+	position: relative
+}
+.item{
+	padding-bottom: 60px;
+}
+.radio-title{
+	padding-bottom: 12px;
+}
+.form-parts-radio{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #c3c3c3;
+	vertical-align: -3px;
+	outline: none;
+}
+input{
+	cursor: pointer;
+}
+input:checked{
+	background-color: #3785c9;
+	box-shadow: 0 0 0 2px #fff,0 0 0 3px #3785c9;
+}
+.textarea{
+	height: 300px;
+}
+.submit{
+    display: block;
+    margin: auto;
+    font-size: 1.8rem;
+    background: #3e95e1;
+    padding: 12px 72px;
+	color: #fff;
+	border-radius: 5px;
+}
+.submit:hover{
+	background-color: #3785c9;	
+}
+.submit:active {
+  background: #04213b;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+  color: #1679a1;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+}
+/*---------------------
+	footer
+-----------------------*/
+.footer{
+	background-color: #5dc9b6;
+	color: #fff;
+}
+.sns-heading{
+	font-size: 3rem;
+	text-align: center;
+	padding: 80px 0 40px;
+	font-weight: 300;
+}
+.sns{
+	display: block;
+    width: 76px;
+    margin: 0 auto 0;
+	padding-bottom: 80px;
+}
+.footer a{
+	color: #fff;
+}
+.footer-text p{
+	padding-bottom: 80px;
+}
+
+.footer-text p:first-of-type{
+	border-top: solid #fff 1px;
+	padding-top: 80px;
+}
+.footer-text p:nth-of-type(3){
+	border-bottom: solid #fff 1px;
+}
+.footer-text p:last-of-type{
+	padding: 0px 0 80px;
+}
+.footer-text p:last-of-type.copy{
+	padding-top: 80px
+}
+/*---------------------
+
+	pc
+
+-----------------------*/
+@media screen and (min-width:801px){
+	.sp{
+		display: none;
+	}
+	.pc{
+		display: block;
+	}
+	.slider img{
+		padding: 0 127px 0;
+		margin: 0 auto;
+	}
+	.pc-flex{
+		display: flex;
+	}
+	.pc-block{
+		display: block;
+	}
+	.sp-space{
+		padding: 0;
+		display: flex;
+	}
+	.inner{
+		padding: 0 127px 0;
+	}
+	.navigation{
+		display: flex;
+    	position: unset;
+		padding: 0;
+		justify-content: flex-end;
+		padding: 0 127px 0;
+		height: 110px;
+	}
+	.current{	
+		background-position: 0% 0%;
+	}
+	.line{
+		width: 100%;
+		height: 10px;
+		background: #5dc9b6;
+		margin-bottom: 12px;
+		box-shadow:  -1px 1px 2px rgba(112, 112, 112, .2);
+	}
+	.nav-item__link{
+		margin-left: 20px;
+	}
+	.nav-list{
+		font-size: 1.6rem;
+		display: flex;
+		padding: 10px 0 0;
+	}
+	.header{
+/*		display: flex;*/
+		position: relative;
+		box-shadow: -1px 1px 2px rgba(112, 112, 112, .2);
+	}
+	.nav-item a{
+		padding-left: 20px;
+	}
+	.header>.block {
+    	padding: 10px 0 10px;
+	}
+	.logo{
+		top: 10px;
+   		left: 132px;
+	}
+	.main-visual{
+		position: initial;
+		padding-top: 0px;
+	}
+	/*---------------------
+		お勧め
+	-----------------------*/
+	.persona-1{
+		matgin: 0 auto 0;
+		margin-left: 32px;
+		
+	}
+	.persona-2{
+		matgin: 0 auto 0;
+		margin-left: 32px;
+		
+	}
+	.persona-3{
+		matgin: 0 auto 0;
+		margin-left: 32px;
+	}
+	.persona-item{
+		min-height: 300px;
+		max-width: 360px;
+		padding-right: 10px;
+	}
+	.persona.inner{
+		margin: 0 auto 0;
+	}
+	
+	.persona .pc-flex{
+		margin: 0 auto 0;
+/*		padding: 0 127px 0;*/
+/*		margin-left: -32px;*/
+	}
+	/*---------------------
+		コース
+	-----------------------*/
+	.course{
+		padding-bottom: 120px;
+	}
+	.course-item .sp{
+		display: none;
+	}
+	.course-title img{
+		width: 250px;
+	}
+	.course-container{
+		width: 490px;
+		min-height: 312px;
+		height: auto;
+		margin: 0;
+		margin-bottom: 80px;
+	}
+	.course-container.last {
+		width: 490px;
+		min-height: 312px;
+		height: auto;
+	}
+	.course-item{
+		justify-content: space-around;
+	}
+	.course-item img{
+		height: 312px;
+	}
+	/*---------------------
+		生徒・先生の声
+	-----------------------*/
+	.voice-item{
+		max-width: 362px;
+		margin-left: 30px;
+	}
+	.student-voice{
+		min-height: 420px;
+	}
+	.student-about{
+		padding: 0;
+		padding-left: 10px;
+		text-align: left;
+	}
+	.student-img{
+		width: 90px;
+		height: auto;
+	}
+	.student-about dt{
+		font-size: 16px;
+	}
+	.voice .pc-flex{
+		margin-left: -30px;
+	}
+	/*---------------------
+		よくある質問
+	-----------------------*/
+	.question{
+		padding-bottom: 80;
+	}
+	.question-title{
+		padding: 120px 0 80px;
+	}
+	.question .inner{
+		margin: 0 auto;
+	}
+	.question-container dd{
+		font-size: 2.4rem;
+		margin-right: 30px;
+		padding-bottom: 40px;
+	}
+	.question-about{
+		padding-top: 40px;
+	}
+	.question-container{
+		max-width: 750px;
+		margin: 0 auto 80px;
+	}
+	.question-container.last{
+		max-width: 750px;
+		margin: 0 auto 0px;
+	}
+	
+	.question-q{
+		max-width: 32px;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	.question-a{
+		max-width: 32px;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	/*---------------------
+		生徒・先生募集
+	-----------------------*/
+	.recruit-item{
+		width: 392px;
+		margin-left: 10px;
+	}
+	.recruit .pc-flex{
+		justify-content: space-around;
+		margin-bottom: 80px;
+		margin-left: -10px;
+	}
+	.recruit .sp{
+		display: none;
+	}
+	.admition-container{
+		max-width: 950px;
+		margin: 0 auto 0px;
+	}
+	.recruit.inner{
+		padding-bottom: 120px;
+	}
+	.recruit-title img{
+		width: 250px;
+	}
+	.admition-text{
+		font-size: 1.6rem;
+	}
+	.admition-text dd {
+		font-size: 1.6rem;
+		padding-bottom: 40px;
+}
+	.admition-text dt{
+		padding-bottom: 20px;
+	}
+	.trial-btn{
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 80px;
+		margin: 0 auto 0px;
+		display: block;
+	}
+	.trial-btn>p{
+		font-size: 24px;
+		padding: 28px 44px;
+		background-color: #3e95e1;
+		color: #fff;
+		border-radius: 5px;
+		max-width: 400px;
+    	text-align: center;
+	}
+	.trial-btn>p:hover{
+		background-color: #3785c9;	
+	}
+	.trial-btn>p:active {
+	  background: #04213b;
+	  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+	  color: #1679a1;
+	  text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+}
+	
+	/*---------------------
+		Senpaiとは
+	-----------------------*/
+	.about{
+		padding-top: 0;
+	}
+	.about .pc{
+		display: block;
+		margin: 0 auto 0;
+	}
+	.about-container{
+		width: 754px;
+		margin: 0 auto 0;
+	}
+	.about-text{
+		padding: 20px 68px 20px;
+		margin-bottom: 80px;
+	}
+	.advantage{
+	background-image: url("../image/PC-img/img-senpaiとは/bg-school.png");
+	background-size: cover;
+	}
+	.advantage-title{
+		padding: 80px 0 80px;
+	}
+	.problem-about {
+    font-size: 1.6rem;
+	}
+	.advantage-container{
+		max-width: 754px;
+		margin: auto;
+		margin-bottom: 80px;
+	}
+	.advantage-container li.last{
+    padding-bottom: 40px;
+	}
+	.problem-about p:last-of-type {
+    padding-bottom: 80px;
+	}
+	.advantage-container h4 {
+    font-size: 2rem;
+    padding: 40px 0 40px;
+	}
+	.advantage-container p.advantage-read{
+		padding: 40px 70px 40px;
+		margin: 0 auto 0;
+	}
+	.advantage-container p.last{
+		padding-bottom: 80px;
+	}
+	.access-title{
+		padding-top: 120px;
+		padding-bottom: 80px;
+	}
+	.access h3{
+		padding-bottom: 80px;
+	}
+	.office>h3{
+		padding: 80px 0 80px;
+	}
+	.office dl:last-of-type{
+		padding-bottom: 80px;
+	}
+	/*---------------------
+		お問い合わせ
+	-----------------------*/
+	.form>.inner {
+		width: 588px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.pc-flex{
+		display: flex;
+	}
+	.brackets{
+		line-height: initial;
+	}
+	.position-right-1{
+		right: 361px;
+    	top: 3px;
+	}
+	.position-right-2{
+		right: 385px;
+    	top: 3px;
+	}
+	.position-right-3{
+		right: 170px;
+    	top: 3px;
+	}
+	.radio{
+		display: flex;
+		align-items: center;
+	}
+	.radio-btn{
+		padding-bottom: 0;
+		align-items: baseline;
+		display: flex;
+		padding-right: 20px;
+	}
+	
+	/*---------------------
+		footer
+	-----------------------*/
+	.footer .pc-flex{
+		justify-content:center;
+	}
+	.sns{
+		margin: 0 40px 0;
+		padding: 80px 0 80px;
+	}
+	.footer-text .pc-flex{
+		margin-bottom: 80px;
+	}
+	.footer-text p:first-of-type{
+		border-top: none;
+		padding-top: 0px;
+		padding-bottom: 0;
+		padding: 0 85px 0;
+		border-left: solid #fff 1px;
+	}
+	.footer-text p:nth-last-of-type(2){
+		padding: 0 70px 0;
+		border-left: solid #fff 1px;
+		border-right: solid #fff 1px;
+	}
+	.footer-text p:nth-of-type(3){
+		border-bottom: none;
+		padding: 0 43px 0;
+		border-right: solid #fff 1px;
+	}
+	.footer-text p:first-of-type.copy{
+		border: none;
+		padding-top: 0;
+		padding-bottom: 80px;
+	}
+	
+	
+	/*---------------------
+	
+	
+			デバイス調整
+	
+	
+	-----------------------*/
+	@media screen and (max-width:1160px){
+	/*---------------------
+		生徒・先生募集
+	-----------------------*/
+	.student-heading.flex{
+			display: block;
+		}
+		
+	}
+	@media screen and (max-width:937px){
+		.logo{
+			display: none;
+		}
+	}
+}
+	/*---------------------
+
+
+			デバイス調整
+
+
+	-----------------------*/
+
+@media screen and (max-width:800px){
+	.slider img{
+		margin: 0 auto 0;
+	}
+	
+	/*---------------------
+		生徒・先生募集
+	-----------------------*/
+	.student-heading.flex{
+		display: flex;
+	}
+	
+	
+	.advantage{
+		background-image: url("../image/PC-img/img-senpaiとは/bg-school.png")
+	}
+}
+@media screen and (max-width:371px){
+	/*---------------------
+		生徒・先生募集
+	-----------------------*/
+	.student-heading.flex{
+		display: block;
+	}
+	.student-img {
+		margin: 0 auto 20px;
+    	display: block;
+	}
+}
+@media screen and (min-width:800px){
+	.student-about{
+			font-weight: 300;
+    		text-align: left;
+		}
+}
+
