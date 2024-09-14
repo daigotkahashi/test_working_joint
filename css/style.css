@@ -94,8 +94,6 @@ img{
 	height: 954px;
 	position: relative;
 	background-image: url("../image/mv_home.png");
-	background-repeat-y: no-repeat;
-	background-size: 100%;
 	background-attachment: fixed;
 }
 .underlayer{
